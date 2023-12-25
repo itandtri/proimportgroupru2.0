@@ -1,0 +1,968 @@
+{
+  "cars": [
+    {
+      "name": "AVATR 11",
+      "brand": "AVATR",
+      "brandtitle": "AVATR",
+      "video": "https://www.youtube.com/embed/0qWF9KPzG28",
+      "img": "data/carimg/avatr11.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/52815#pvareaid=3454451",
+      "pdf": "data/pdf/avatr11.pdf"
+    },
+    {
+      "name": "AVATR 12",
+      "brand": "AVATR",
+      "brandtitle": "AVATR",
+      "video": "https://www.youtube.com/embed/0qWF9KPzG28",
+      "img": "data/carimg/avatr12.png",
+      "type": "ev",
+      "pdf": "data/pdf/avatr12.pdf",
+      "pano":"https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=8834"
+    },
+    {
+      "name": "BMW i3",
+      "brand": "BMW",
+      "brandtitle": "BMW",
+      "img": "data/carimg/bmwi3.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/54899#pvareaid=3454451",
+      "pdf": "data/pdf/bmwi3.pdf"
+    },
+    {
+      "name": "BMW i4",
+      "brand": "BMW",
+      "brandtitle": "BMW",
+      "img": "data/carimg/bmwi4.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/51513#pvareaid=3454451",
+      "pdf": "data/pdf/bmwi4.pdf"
+    },
+    {
+      "name": "BMW i7",
+      "brand": "BMW",
+      "brandtitle": "BMW",
+      "img": "data/carimg/bmwi7.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4296"
+    },
+    {
+      "name": "BMW iX",
+      "brand": "BMW",
+      "brandtitle": "BMW",
+      "img": "data/carimg/bmwix.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/50210#pvareaid=3454451",
+      "pdf": "data/pdf/bmwiX.pdf"
+    },
+    {
+      "name": "BMW iX3",
+      "brand": "BMW",
+      "brandtitle": "BMW",
+      "img": "data/carimg/bmwix3.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/53240#pvareaid=3454451",
+      "pdf": "data/pdf/bmwiX3.pdf"
+    },
+    {
+      "name": "BMW XM",
+      "brand": "BMW",
+      "brandtitle": "BMW",
+      "img": "data/carimg/bmwxm.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4772",
+      "pdf": "data/pdf/bmwxm.pdf"
+    },
+    {
+      "name": "BYD DESTROYER 05",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/DtprCb-Beno",
+      "img": "data/carimg/byddestroyer05.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/52587#pvareaid=3454451",
+      "pdf": "data/pdf/byddestroyer05.pdf"
+    },
+    {
+      "name": "BYD HAN EV",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/VUnsPd--xB4",
+      "img": "data/carimg/bydhanev.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/42643?appversion=",
+      "pdf": "data/pdf/bydhanev.pdf"
+    },
+    {
+      "name": "BYD HAN HYBRID",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/62Fq73b1UOM",
+      "img": "data/carimg/bydhanhybrid.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/55313?appversion=",
+      "pdf": "data/pdf/bydhanhybrid.pdf"
+    },
+    {
+      "name": "DENZA D9",
+      "brand": "DENZA",
+      "brandtitle": "DENZA",
+      "img": "data/carimg/denzad9.png",
+      "type": "hybrid"
+    },
+    {
+      "name": "BYD QIN PLUS EV",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/uzNyhU0D_Gs",
+      "img": "data/carimg/bydqinev.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4899",
+      "pdf": "data/pdf/bydqinev.pdf"
+    },
+    {
+      "name": "BYD QIN PLUS HYBRID",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/8MIZgLmYN-c",
+      "img": "data/carimg/bydqindm-i.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/49499?appversion=",
+      "pdf": "data/pdf/bydqinhybrid.pdf"
+    },
+    {
+      "name": "BYD SEAL DM-i",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "img": "data/carimg/bydsealdm-i.png",
+      "type": "Hybrid"
+    },
+    {
+      "name": "BYD SONG MAX DM-i",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/rhbh9OguC88",
+      "img": "data/carimg/bydsongmaxdm-i.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=2887",
+      "pdf": "data/pdf/bydsongmaxdm-i.pdf"
+    },
+    {
+      "name": "BYD SONG PLUS DM-i",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/mB2-OW6oOkk",
+      "img": "data/carimg/bydsongplusdm-i.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4865",
+      "pdf": "data/pdf/bydsongplusdm-i.pdf"
+    },
+    {
+      "name": "BYD SONG PLUS DM-i 2023",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/zT0kuyy0xc4",
+      "img": "data/carimg/bydsongplusdmi2023.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4865&selected_color=%23010141&selected_sub_color=%23EAE6E6&selected_car_id=90459",
+      "pdf": "data/pdf/bydsongplusdmi2023.pdf"
+    },
+    {
+      "name": "BYD SONG PLUS EV",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/mB2-OW6oOkk",
+      "img": "data/carimg/bydsongplusev.png",
+      "type": "ev",
+      "pano": "https://vr.yiche.com/vr/PanoInnerNew.html?albumId=5235&c=m&app_ver=10.65.0",
+      "pdf": "data/pdf/bydsongplusev.pdf"
+    },
+    {
+      "name": "BYD SONG PLUS EV 2023",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/3mpImJ_fUJw",
+      "img": "data/carimg/bydsongplusev2023.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4865&selected_color=%23010141&selected_sub_color=%23EAE6E6&selected_car_id=90459",
+      "pdf": "data/pdf/bydsongplusev2023.pdf"
+    },
+    {
+      "name": "BYD SONG PRO DM-i",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/zG1x-WW9cM8",
+      "img": "data/carimg/bydsongprodm-i.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=3504&selected_color=%23000000&selected_sub_color=&selected_car_id=38643",
+      "pdf": "data/pdf/bydsongprodm-i.pdf"
+    },
+    {
+      "name": "BYD TANG EV",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/VQOgwGbjXPA",
+      "img": "data/carimg/bydtangev.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/56236?appversion=",
+      "pdf": "data/pdf/bydtangev.pdf"
+    },
+    {
+      "name": "BYD TANG HYBRID",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "video": "https://www.youtube.com/embed/CbFoMH4OO9o",
+      "img": "data/carimg/bydtangdmp.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/46572?appversion=",
+      "pdf": "data/pdf/bydtanghybrid.pdf"
+    },
+    {
+      "name": "BYD YUAN PLUS",
+      "brand": "BYD",
+      "brandtitle": "BYD",
+      "img": "data/carimg/bydyuanplus.png",
+      "type": "Hybrid"
+    },
+    {
+      "name": "CADILLAC LYRIQ",
+      "brand": "CADILLAC",
+      "brandtitle": "CADILLAC",
+      "img": "data/carimg/cadillaclyriq.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5358&selected_car_id=56550",
+      "pdf": "data/pdf/cadillaclyriq.pdf"
+    },
+    {
+      "name": "CHANGAN CS75 PLUS",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "video": "https://www.youtube.com/embed/dZolkfNWguQ",
+      "img": "data/carimg/changancs75plus.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=3196",
+      "pdf": "data/pdf/changancs75plus.pdf"
+    },
+    {
+      "name": "CHANGAN OSHAN Z6 iDD",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "video": "https://www.youtube.com/embed/u7ZOy-GCO1o",
+      "img": "data/carimg/oshanz6idd.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5857",
+      "pdf": "data/pdf/oshanz6idd.pdf"
+    },
+    {
+      "name": "CHANGAN UNI-K",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "video": "https://www.youtube.com/embed/vVUsvafJPuM",
+      "img": "data/carimg/changanunik.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/49850#pvareaid=3454451",
+      "pdf": "data/pdf/changanunik.pdf"
+    },
+    {
+      "name": "CHANGAN UNI-K iDD",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "video": "https://www.youtube.com/embed/T8h5oM70fME",
+      "img": "data/carimg/changanunikidd.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5216&selected_color=%239797BE&selected_sub_color=%23CFCFCF&selected_car_id=86087",
+      "pdf": "data/pdf/changanunikidd.pdf"
+    },
+    {
+      "name": "CHANGAN UNI-T",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "video": "https://www.youtube.com/embed/bXdqN15kdCQ",
+      "img": "data/carimg/changanunit.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/52301#pvareaid=3454451",
+      "pdf": "data/pdf/changanunit.pdf"
+    },
+    {
+      "name": "CHANGAN UNI-V",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "img": "data/carimg/changanuniv.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/56122#pvareaid=3454451",
+      "pdf": "data/pdf/changanuniv.pdf"
+    },
+    {
+      "name": "CHANGAN UNI-V iDD",
+      "brand": "CHANGAN",
+      "brandtitle": "CHANGAN",
+      "img": "data/carimg/changanunividd.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5923",
+      "pdf": "data/pdf/changanuniv.pdf"
+    },
+    {
+      "name": "CHERY ARRIZO 8",
+      "brand": "CHERY",
+      "brandtitle": "CHERY",
+      "img": "data/carimg/cheryarrizo8.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/54408?appversion="
+    },
+    {
+      "name": "CHERY OMODA 5",
+      "brand": "CHERY",
+      "brandtitle": "CHERY",
+      "img": "data/carimg/cheryomoda.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/51329#pvareaid=3454451",
+      "pdf": "data/pdf/cheryomoda5.pdf"
+    },
+    {
+      "name": "CHERY TIGGO 7 PLUS",
+      "brand": "CHERY",
+      "brandtitle": "CHERY",
+      "img": "data/carimg/cherytiggo7plus.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5242"
+    },
+    {
+      "name": "CHERY TIGGO 8 PLUS e+",
+      "brand": "CHERY",
+      "brandtitle": "CHERY",
+      "img": "data/carimg/cherytiggo8pluse+.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5001"
+    },
+    {
+      "name": "CHERY TIGGO 9",
+      "brand": "CHERY",
+      "brandtitle": "CHERY",
+      "img": "data/carimg/cherytiggo9.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6227"
+    },
+    {
+      "name": "FORD EXPLORER",
+      "brand": "FORD",
+      "brandtitle": "FORD",
+      "img": "data/carimg/fordexplorer.png",
+      "type": "benzin"
+    },
+    {
+      "name": "GAC GS8",
+      "brand": "GAC",
+      "brandtitle": "GAC",
+      "img": "data/carimg/gacgs8.png",
+      "type": "benzin"
+    },
+    {
+      "name": "GEELY BINYUE",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "img": "data/carimg/geelybinyue.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=2975",
+      "pdf": "data/pdf/geelybinyue.pdf"
+    },
+    {
+      "name": "GEELY BOYUE L",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "img": "data/carimg/geelyboyuel.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/51397?appversion=",
+      "pdf": "data/pdf/geelyboyuel.pdf"
+    },
+    {
+      "name": "GEELY ICON",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "img": "data/carimg/geelyicon.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=2880",
+      "pdf": "data/pdf/geelyicon.pdf"
+    },
+    {
+      "name": "GEELY MONJARO",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "video": "https://www.youtube.com/embed/MHcB2hla8IA",
+      "img": "data/carimg/geelymonjaro.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4857&selected_color=%23000000&selected_sub_color=%234C7179&selected_car_id=52089&position=rear_vr",
+      "pdf": "data/pdf/geelymonjaro.pdf"
+    },
+    {
+      "name": "GEELY MONJARO PHEV",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "video": "https://www.youtube.com/embed/Fn0H3GMOggM",
+      "img": "data/carimg/geelymonjarophev.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/55837?appversion=",
+      "pdf": "data/pdf/geelyxingyuelhip.pdf"
+    },
+    {
+      "name": "GEELY XING RUI",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "img": "data/carimg/geelyxingrui.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=3476",
+      "pdf": "data/pdf/geelyxingrui.pdf"
+    },
+    {
+      "name": "GEELY XINGYUE S",
+      "brand": "GEELY",
+      "brandtitle": "GEELY",
+      "img": "data/carimg/geelyxingyues.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5225&selected_color=%23089C08&selected_sub_color=&selected_car_id=54950",
+      "pdf": "data/pdf/geelyxingyues.pdf"
+    },
+    {
+      "name": "HAVAL H5",
+      "brand": "HAVAL",
+      "brandtitle": "HAVAL",
+      "img": "data/carimg/havalh5.png",
+      "pano":"https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6321",
+      "type": "benzin",
+      "pdf": "data/pdf/havalh5.pdf"
+    },
+    {
+      "name": "HiPHi X",
+      "brand": "HIPHI",
+      "brandtitle": "HIPHI",
+      "img": "data/carimg/hiphix.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/50428#pvareaid=3454451",
+      "pdf": "data/pdf/hiphix.pdf"
+    },
+    {
+      "name": "HiPHi Z",
+      "brand": "HIPHI",
+      "brandtitle": "HIPHI",
+      "img": "data/carimg/hiphiz.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5431"
+    },
+    {
+      "name": "HONGQI E-HS9",
+      "brand": "HONGQI",
+      "brandtitle": "HONGQI",
+      "img": "data/carimg/hongqiehs9.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/54515#pvareaid=3454451",
+      "pdf": "data/pdf/hongqiehs9.pdf"
+    },
+    {
+      "name": "HONGQI H9",
+      "brand": "HONGQI",
+      "brandtitle": "HONGQI",
+      "img": "data/carimg/hongqih9.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4355"
+    },
+    {
+      "name": "HONGQI HQ9",
+      "brand": "HONGQI",
+      "brandtitle": "HONGQI",
+      "img": "data/carimg/hongqihq9.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5905"
+    },
+    {
+      "name": "HONGQI HS5",
+      "brand": "HONGQI",
+      "brandtitle": "HONGQI",
+      "img": "data/carimg/hongqihs5.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=3159"
+    },
+    {
+      "name": "HUAWEI AITO M5",
+      "brand": "HUAWEIAITO",
+      "brandtitle": "HUAWEI AITO",
+      "video": "https://www.youtube.com/embed/CDBOQGJbdpQ",
+      "img": "data/carimg/aitom5.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/53200?appversion=",
+      "pdf": "data/pdf/aitom5.pdf"
+    },
+    {
+      "name": "HUAWEI AITO M7",
+      "brand": "HUAWEIAITO",
+      "brandtitle": "HUAWEI AITO",
+      "video": "https://www.youtube.com/embed/liXPBRn5niI",
+      "img": "data/carimg/aitom7.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5820&selected_car_id=75798",
+      "pdf": "data/pdf/aitom7.pdf"
+    },
+    {
+      "name": "IM MOTORS L7",
+      "brand": "IMMOTORS",
+      "brandtitle": "IM MOTORS",
+      "video": "https://www.youtube.com/embed/tsrgYOq1xSQ",
+      "img": "data/carimg/iml7.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/56346#pvareaid=3454451",
+      "pdf": "data/pdf/iml7.pdf"
+    },
+    {
+      "name": "LEAPMOTOR C11 EV",
+      "brand": "LEAPMOTOR",
+      "brandtitle": "LEAPMOTOR",
+      "img": "data/carimg/leapmotorc11ev.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4731",
+      "pdf": "data/pdf/leapmotorc11ev.pdf"
+    },
+    {
+      "name": "LEAPMOTOR C11 Гибрид",
+      "brand": "LEAPMOTOR",
+      "brandtitle": "LEAPMOTOR",
+      "img": "data/carimg/leapmotorc11.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4731",
+    },
+    {
+      "name": "LEOPARD 5",
+      "brand": "LEOPARD",
+      "brandtitle": "LEOPARD",
+      "img": "data/carimg/leopard5.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=8884",
+      "pdf": "data/pdf/leopard5.pdf"
+
+    },
+    {
+      "name": "LIXIANG L7",
+      "brand": "LIXIANG",
+      "brandtitle": "LIXIANG",
+      "video": "https://www.youtube.com/embed/ANiL_LVxy0M",
+      "img": "data/carimg/lixiangl7.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6173",
+      "pdf": "data/pdf/li.pdf"
+    },
+    {
+      "name": "LIXIANG L8",
+      "brand": "LIXIANG",
+      "brandtitle": "LIXIANG",
+      "video": "https://www.youtube.com/embed/-PWSiq2-ShM",
+      "img": "data/carimg/lixiangl8.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6095&selected_color=%23F9845D&selected_sub_color=&selected_car_id=77724",
+      "pdf": "data/pdf/li.pdf"
+    },
+    {
+      "name": "LIXIANG L9",
+      "brand": "LIXIANG",
+      "brandtitle": "LIXIANG",
+      "video": "https://www.youtube.com/embed/RCT2y7xRSSs",
+      "img": "data/carimg/lixiangl9.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5227&selected_color=%23FFFFFF&selected_sub_color=&selected_car_id=72710",
+      "pdf": "data/pdf/li.pdf"
+    },
+    {
+      "name": "LIXIANG ONE",
+      "brand": "LIXIANG",
+      "brandtitle": "LIXIANG",
+      "video": "https://www.youtube.com/embed/J2o6_hktqIw",
+      "img": "data/carimg/lixiangone.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/51328?appversion=",
+      "pdf": "data/pdf/LiOne.pdf"
+    },
+    {
+      "name": "LOTUS ELETRE",
+      "brand": "LOTUS",
+      "brandtitle": "LOTUS",
+      "img": "data/carimg/lotuseletre.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5825&selected_color=%23FF0000&selected_sub_color=&selected_car_id=71921",
+      "pdf": "data/pdf/lotuseletre.pdf"
+    },
+    {
+      "name": "Lync & Co 09 EM-P",
+      "brand": "LYNK",
+      "brandtitle": "LYNK",
+      "img": "data/carimg/lynk&co09em-p.png"
+    },
+    {
+      "name": "Lynk & Co 01",
+      "brand": "LYNK",
+      "brandtitle": "LYNK",
+      "img": "data/carimg/lynk&co01.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=1622"
+    },
+    {
+      "name": "Lynk & Co 02",
+      "brand": "LYNK",
+      "brandtitle": "LYNK",
+      "img": "data/carimg/lynk&co02.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4970"
+    },
+    {
+      "name": "Lynk & Co 03 EM-F",
+      "brand": "LYNK",
+      "brandtitle": "LYNK",
+      "video": "https://www.youtube.com/embed/kg8vuDANQC0",
+      "img": "data/carimg/lynk&co03.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=1623",
+      "pdf": "data/pdf/lynk&co03em-f.pdf"
+    },
+    {
+      "name": "Lynk & Co 05",
+      "brand": "LYNK",
+      "brandtitle": "LYNK",
+      "img": "data/carimg/lynk&co05.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=3463"
+    },
+    {
+      "name": "Lynk & Co 06 PHEV",
+      "brand": "LYNK",
+      "brandtitle": "LYNK",
+      "img": "data/carimg/lynk&co06phev.png",
+      "type": "benzin",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4340"
+    },
+    {
+      "name": "M-TERRAIN 917",
+      "brand": "MTERRAIN",
+      "brandtitle": "MTERRAIN",
+      "img": "data/carimg/mterrain917.png",
+      "type": "hybrid"
+    },
+    {
+      "name": "MAXUS EV30",
+      "brand": "ГРУЗОВЫЕ",
+      "brandtitle": "ГРУЗОВЫЕ",
+      "img": "data/carimg/maxusev30.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/1014131#pvareaid=3454451",
+      "pdf": "data/pdf/maxusev30.pdf",
+      "specialbrand": "maxus",
+      "speciallogo": "TRUE"
+    },
+    {
+      "name": "MAXUS EV90",
+      "brand": "ГРУЗОВЫЕ",
+      "brandtitle": "ГРУЗОВЫЕ",
+      "img": "data/carimg/maxusev90.png",
+      "type": "Ev",
+      "specialbrand": "maxus",
+      "speciallogo": "TRUE"
+    },
+    {
+      "name": "MERCEDES-BENZ EQE",
+      "brand": "MERCEDESBENZ",
+      "brandtitle": "MERCEDES BENZ",
+      "img": "data/carimg/mbeqe.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5813"
+    },
+    {
+      "name": "MERCEDES-BENZ EQE SUV",
+      "brand": "MERCEDESBENZ",
+      "brandtitle": "MERCEDES BENZ",
+      "img": "data/carimg/mercedes-benzeqesuv.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6208",
+      "pdf": "data/pdf/mbeqesuv.pdf"
+
+    },
+    {
+      "name": "MERCEDES-BENZ EQS",
+      "brand": "MERCEDESBENZ",
+      "brandtitle": "MERCEDES BENZ",
+      "img": "data/carimg/mbeqs.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4668"
+    },
+    {
+      "name": "MERCEDES-BENZ EQS SUV",
+      "brand": "MERCEDESBENZ",
+      "brandtitle": "MERCEDES BENZ",
+      "img": "data/carimg/mbeqssuv.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5805&selected_car_id=80841",
+      "pdf": "data/pdf/mbeqssuv.pdf"
+
+    },
+    {
+      "name": "NIO EC6",
+      "brand": "NIO",
+      "brandtitle": "NIO",
+      "img": "data/carimg/nioec6.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/57710#pvareaid=3454451",
+      "pdf": "data/pdf/nioec6.pdf"
+    },
+    {
+      "name": "NIO ET5",
+      "brand": "NIO",
+      "brandtitle": "NIO",
+      "img": "data/carimg/nioet5.png",
+      "type": "Ev"
+    },
+    {
+      "name": "NIO ET7",
+      "brand": "NIO",
+      "brandtitle": "NIO",
+      "img": "data/carimg/nioet7.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/49483#pvareaid=3454451",
+      "pdf": "data/pdf/nioet7.pdf"
+    },
+    {
+      "name": "POLAR STONE 01",
+      "brand": "POLARSTONE",
+      "brandtitle": "POLAR STONE",
+      "img": "data/carimg/polarstone01.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=9131",
+      "pdf": "data/pdf/polarstone01.pdf"
+    },
+    {
+      "name": "POLESTAR 2",
+      "brand": "POLESTAR",
+      "brandtitle": "POLESTAR",
+      "img": "data/carimg/polestar2.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/37469",
+      "pdf": "data/pdf/polestar2.pdf"
+    },
+    {
+      "name": "TANK 400 Hi4-T",
+      "brand": "TANK",
+      "brandtitle": "TANK",
+      "img": "data/carimg/tank400hi4-t.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=8964",
+      "pdf": "data/pdf/tank400hi4-t.pdf"
+    },
+    {
+      "name": "TANK 500 BUSINESS",
+      "brand": "TANK",
+      "brandtitle": "TANK",
+      "video": "https://www.youtube.com/embed/6wbVGPmtGiM",
+      "img": "data/carimg/tank500.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/54483?appversion=",
+      "pdf": "data/pdf/tank500.pdf"
+    },
+    {
+      "name": "TANK 500 Hi4-T",
+      "brand": "TANK",
+      "brandtitle": "TANK",
+      "video": "https://www.youtube.com/embed/XShMD1FlBi4",
+      "img": "data/carimg/tank500hi4-t.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/54483?appversion=",
+      "pdf": "data/pdf/tank500.pdf"
+    },
+    {
+      "name": "TANK 500 SPORT",
+      "brand": "TANK",
+      "brandtitle": "TANK",
+      "video": "https://www.youtube.com/embed/gXlfSQexhlY",
+      "img": "data/carimg/tank500sport.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/54483?appversion=",
+      "pdf": "data/pdf/tank500.pdf"
+    },
+    {
+      "name": "TESLA MODEL Y",
+      "brand": "TESLA",
+      "brandtitle": "TESLA",
+      "img": "data/carimg/teslamodely.png",
+      "type": "Ev"
+    },
+    {
+      "name": "TOYOTA BZ4X",
+      "brand": "TOYOTA",
+      "brandtitle": "TOYOTA",
+      "img": "data/carimg/toyotabz4x.png",
+      "type": "Ev"
+    },
+    {
+      "name": "TOYOTA CAMRY",
+      "brand": "TOYOTA",
+      "brandtitle": "TOYOTA",
+      "img": "data/carimg/toyotacamry.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/57445#pvareaid=3454451",
+      "pdf": "data/pdf/toyotacamry.pdf"
+    },
+    {
+      "name": "VOLKSWAGEN ID 4",
+      "brand": "VOLKSWAGEN",
+      "brandtitle": "VOLKSWAGEN",
+      "img": "data/carimg/vwid4.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/49181#pvareaid=2042304",
+      "pdf": "data/pdf/vwid4.pdf"
+    },
+    {
+      "name": "VOLKSWAGEN ID 6",
+      "brand": "VOLKSWAGEN",
+      "brandtitle": "VOLKSWAGEN",
+      "img": "data/carimg/vwid6.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/56429#pvareaid=3454451",
+      "pdf": "data/pdf/vwid6.pdf"
+    },
+    {
+      "name": "VOLKSWAGEN PASSAT",
+      "brand": "VOLKSWAGEN",
+      "brandtitle": "VOLKSWAGEN",
+      "img": "data/carimg/vwpassat.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/59488#pvareaid=3454451",
+      "pdf": "data/pdf/vwpassat2023.pdf"
+    },
+    {
+      "name": "VOLKSWAGEN PASSAT PHEV",
+      "brand": "VOLKSWAGEN",
+      "brandtitle": "VOLKSWAGEN",
+      "img": "data/carimg/vwpassatphev.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/55601?appversion=",
+      "pdf": "data/pdf/vwpassatphev.pdf"
+    },
+    {
+      "name": "VOLKSWAGEN TIGUAN L",
+      "brand": "VOLKSWAGEN",
+      "brandtitle": "VOLKSWAGEN",
+      "img": "data/carimg/vwtiguanl.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/59075#pvareaid=3454451",
+      "pdf": "data/pdf/vwtiguanallspace.pdf"
+    },
+    {
+      "name": "VOLKSWAGEN TIGUAN X",
+      "brand": "VOLKSWAGEN",
+      "brandtitle": "VOLKSWAGEN",
+      "img": "data/carimg/vwtiguanx.png",
+      "type": "benzin",
+      "pano": "https://pano.autohome.com.cn/car/pano/59083#pvareaid=3454451",
+      "pdf": "data/pdf/vwtiguanx.pdf"
+    },
+    {
+      "name": "BLUE ELECTRIC e5",
+      "brand": "BLUEELECTRIC",
+      "brandtitle": "BLUE ELECTRIC",
+      "img": "data/carimg/blueelectrice5.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6204&position=rear_vr&selected_color=%23B7AE82&select_color_name=胡桃棕&selected_sub_color=&select_sub_color_name=&selected_car_id=81217",
+      "pdf": "data/pdf/blueelectrice5.pdf"
+    },
+    {
+      "name": "VOYAH CHASING LIGHT PHEV",
+      "brand": "VOYAH",
+      "brandtitle": "VOYAH",
+      "img": "data/carimg/voyahchasinglightphev.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=9167&selected_color=%23000000&select_color_name=黑色&selected_sub_color=%23ABA47A&select_sub_color_name=棕色&selected_car_id=91328",
+      "pdf": "data/pdf/voyahchasinglightphev.pdf"
+    },
+    {
+      "name": "VOYAH DREAMER",
+      "brand": "VOYAH",
+      "brandtitle": "VOYAH",
+      "video": "https://www.youtube.com/embed/E1ubaOwfN60",
+      "img": "data/carimg/voyahdreamer.png",
+      "type": "hybrid",
+      "pano": "https://pano.autohome.com.cn/car/pano/53874#pvareaid=3454451",
+      "pdf": "data/pdf/voyahdreamer.pdf"
+    },
+    {
+      "name": "VOYAH FREE",
+      "brand": "VOYAH",
+      "brandtitle": "VOYAH",
+      "video": "https://youtu.be/2E20rNHyQSU",
+      "img": "data/carimg/voyahfreeev.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/54077#pvareaid=3454451",
+      "pdf": "data/pdf/voyahfree.pdf"
+    },
+    {
+      "name": "VOYAH FREE 2024",
+      "brand": "VOYAH",
+      "brandtitle": "VOYAH",
+      "video": "https://youtu.be/2E20rNHyQSU",
+      "img": "data/carimg/voyahfree2024.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=4760&selected_color=%238C7E7B&selected_sub_color=%23658091&selected_car_id=92033",
+      "pdf": "data/pdf/voyahfree2024.pdf"
+    },
+    {
+      "name": "WEY BLUE MOUNTAIN",
+      "brand": "WEY",
+      "brandtitle": "WEY",
+      "img": "data/carimg/weybluemountain.png",
+      "type": "hybrid",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6206",
+      "pdf": "data/pdf/weybluemountain.pdf"
+    },
+    {
+      "name": "XPENG G6",
+      "brand": "XPENG",
+      "brandtitle": "XPENG",
+      "img": "data/carimg/xpengg6.png",
+      "type": "hybrid"
+    },
+    {
+      "name": "XPENG G9",
+      "brand": "XPENG",
+      "brandtitle": "XPENG",
+      "img": "data/carimg/xpengg9.png",
+      "type": "hybrid"
+    },
+    {
+      "name": "YANGWANG U8",
+      "brand": "YANGWANG",
+      "brandtitle": "YANGWANG",
+      "img": "data/carimg/yangwangu8.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=6235"
+    },
+    {
+      "name": "ZEEKR 001",
+      "brand": "ZEEKR",
+      "brandtitle": "ZEEKR",
+      "video": "https://www.youtube.com/embed/JBZHsoku1Vw",
+      "img": "data/carimg/zeekr001.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/50437#pvareaid=2042304",
+      "pdf": "data/pdf/zeekr001.pdf"
+    },
+    {
+      "name": "ZEEKR 009",
+      "brand": "ZEEKR",
+      "brandtitle": "ZEEKR",
+      "video": "https://www.youtube.com/embed/G6ce1yvClpg",
+      "img": "data/carimg/zeekr009.png",
+      "type": "ev",
+      "pano": "https://m.dcdapp.com/motor/inapp/pano-new/inner.html?series_id=5878"
+    },
+    {
+      "name": "ZEEKR X",
+      "brand": "ZEEKR",
+      "brandtitle": "ZEEKR",
+      "video": "https://www.youtube.com/embed/K0BB1ld4WW4",
+      "img": "data/carimg/zeekrx.png",
+      "type": "ev",
+      "pano": "https://pano.autohome.com.cn/car/pano/60492?appversion=",
+      "pdf": "data/pdf/zeekrx.pdf"
+    }
+  ]
+}

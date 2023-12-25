@@ -1,0 +1,298 @@
+.simple{
+    background-color: white;
+padding:25px
+}
+
+.simple2{
+    background-color: white;
+padding:25px
+}
+
+.block {
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s, opacity 1s;
+}
+
+#container--blocks{
+    grid-column: 1/7;
+    display: grid;
+}
+
+.mobileBlock h1{
+    font-family: Helvetica;
+    color: black;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 55px;
+    font-variant: normal;
+    padding-left: .5em;
+    padding-right: .5em
+}
+
+
+
+.mobileBlock h2{
+    font-family: open-sans-light;
+    color: black;
+
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 35px;
+    font-variant: normal;
+    padding-left: .8em;
+    padding-right: .8em
+}
+
+.helloblock{
+    padding-top: 160px;
+    display:grid;
+    grid-template-rows: 60px 120px 3fr;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+@media screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .helloblock{
+        padding-top: 50px;
+        display:grid;
+        grid-template-rows: 150px 120px 3fr;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    
+    }
+    .kombinatblock.sliderContainer.nsc-review{
+        margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+    }
+}
+
+.mobileBlock p{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+        color: black;
+
+    font-style: normal;
+    font-size: 30px;
+    font-variant: normal;
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.helloblock--img{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/twozeekrs.png');
+    height:600px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    margin-top: 150px;
+
+
+}
+
+.helloblock--img.business{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/business1.jpg');
+
+}
+
+.helloblock--img.shipping{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/shipping5.jpg');
+
+}
+
+.helloblock--img.contacts{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/office3.png');
+}
+
+
+
+.goalsblock--img{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/2lixiangs.png');
+    height:500px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    margin-top: 150px;
+
+}
+
+.goalsblock--img.business{
+    background-image:linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/business4.jpeg');
+}
+
+.finishblock--img{
+    height:500px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    margin-top: 150px;
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%, rgb(255, 255, 255) 100%),
+    url('../../../dist/data/voyah.png');
+
+}
+
+
+
+
+.historystartblock{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f4f5f6;;
+
+}
+
+.historystartblock p{
+    margin-top: 100px;
+}
+
+.kombinatblock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.kombinatblock button{
+    min-width: 42px;
+  min-height: 32px;
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 23px;
+  transition: all .5s linear;
+  display: block;
+}
+
+.lastgrid button{
+    min-width: 42px;
+  min-height: 32px;
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 23px;
+  transition: all .5s linear;
+  display: block;
+}
+
+.lastgrid a{
+    color: #1937b9;
+    font-family: open-sans-light;
+    font-size: 16px;
+}
+.kombinatblock a{
+    color: #1937b9;
+    font-family: open-sans-light;
+    font-size: 16px;
+}
+
+.simpleSlider{
+    transition: transform 1s;
+    background-color: white;
+
+border-radius: 25px;
+margin:25px;
+padding:25px
+}
+
+.simpleSlider img{
+    max-width: 95%;
+    max-height: 100%;
+    
+}
+    
+
+.sliderContainer{
+    display: grid;
+    border-radius: 25px;
+    margin-left: 1em;
+    margin-right: 1em;
+    overflow-x: hidden;
+    padding: 25px;
+
+}
+
+.stockSlider__button__container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.stockSLider__button {
+    color: #2f2f2f;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #ffffffb3;
+    border: none;
+    border-radius: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .goalsblock{
+    padding-top: 100px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .goalsblock--grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    grid-gap:50px
+  }
+
+  .lastgrid{
+    grid-column: 1/3;
+  }
+
+.ss-review{
+    padding:25px
+}
+
+.finishblock{
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.media_block--about{
+    width: 200px;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  }
+  @media screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+
+  }
+
+  .sc-kombinat{display:none}
+  .sc-review{display:none}
+
+  .margin-p{
+    margin:50px
+  }

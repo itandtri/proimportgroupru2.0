@@ -1,0 +1,258 @@
+.simple{
+    background-color: white;
+
+}
+.block {
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s, opacity 1s;
+}
+.mobileBlock h1{
+    font-family: Helvetica;
+    color: black;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 25px;
+    font-variant: normal;
+    padding-left: .5em;
+    padding-right: .5em
+}
+
+.mobileBlock h2{
+    font-family: open-sans-light;
+    color: black;
+
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px;
+    font-variant: normal;
+    padding-left: .8em;
+    padding-right: .8em
+}
+
+.helloblock{
+    padding-top: 160px;
+    display:grid;
+    grid-template-rows: 60px 120px 3fr;
+
+}
+
+.mobileBlock p{
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: lighter;
+        color: black;
+
+    font-style: normal;
+    font-size: 20px;
+    font-variant: normal;
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.helloblock--img{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/twozeekrs.png');
+    height:200px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    margin-top: 150px;
+}
+
+.helloblock--img.contacts{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/office3.png');
+}
+
+.helloblock--img.business{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/business1.jpg');
+
+}
+.goalsblock--img{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/2lixiangs.png');
+    height:200px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    margin-top: 150px;
+}
+
+.goalsblock--img.business{
+    background-image:linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/business4.jpeg');
+}
+
+.goalsblock--img.contacts{
+    background-image:linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/lixiangorangeinterior.jpeg');
+}
+
+.finishblock--img{
+    height:250px;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    margin-top: 150px;
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 5%,rgba(255, 255, 255, 0.443) 15%, rgba(255, 0, 0, 0) 40%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 80%,#ffffff 95%),
+    url('../../../dist/data/voyah.png');
+}
+
+.finishblock--img.contacts{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 5%,rgba(255, 255, 255, 0.443) 15%, rgba(255, 0, 0, 0) 40%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 80%,#ffffff 95%),
+    url('../../../dist/data/changaninterior.jpg');
+}
+
+.helloblock--img.shipping{
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgba(255, 255, 255, 0.56) 15%, rgba(255, 0, 0, 0) 50%,rgba(255, 255, 255, 0.56) 75%, rgba(255, 255, 255, 0.643) 85%,#f4f5f6 100%),
+    url('../../../dist/data/shipping5.jpg');
+
+}
+
+.historystartblock{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f4f5f6;;
+
+}
+
+.historystartblock p{
+    margin-top: 100px;
+}
+
+.kombinatblock button{
+    min-width: 42px;
+  min-height: 32px;
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 23px;
+  transition: all .5s linear;
+  display: block;
+}
+
+.kombinatblock a{
+    color: #1937b9;
+    font-family: open-sans-light;
+    font-size: 16px;
+}
+
+.simpleSlider{
+    grid-area: 1/1/1/2;
+    transition: transform 1s;
+    background-color: white;
+
+    border-radius: 25px;
+    margin:25px;
+    padding:25px
+}
+
+.simpleSlider img{
+    max-width: 100%;
+    max-height: 200px;
+}
+    
+
+.sliderContainer{
+    display: grid;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    overflow-x: hidden;
+
+}
+
+.stockSlider__button__container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.stockSLider__button {
+    color: #2f2f2f;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #ffffffb3;
+    border: none;
+    border-radius: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .goalsblock{
+    padding-top: 100px;
+  }
+
+  .goalsblock--grid{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 100px;
+    grid-gap:50px
+  }
+
+.ss-review{
+    padding:25px
+}
+
+.finishblock{
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.media_block--about{
+    width: 200px;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  }
+
+  .nsc-kombinat{
+    display:none
+  }
+
+  .nsc-review{
+    display:none
+  }
+
+  .margin-p{
+    margin:50px
+  }
+
+  .simple2.block.contacts{
+    background-color: white;
+    padding: 25px;
+  }
+
+  .lastgrid button{
+    min-width: 42px;
+  min-height: 32px;
+  background-color: #f4f5f6;
+  border-width: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 23px;
+  transition: all .5s linear;
+  display: block;
+}
+
+.lastgrid a{
+    color: #1937b9;
+    font-family: open-sans-light;
+    font-size: 16px;
+}

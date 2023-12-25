@@ -1,0 +1,21 @@
+{
+  "name": "proimport.kz",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@parcel/transformer-less": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel index.html --dist-dir ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SB",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "2gis-maps": "^3.7.1",
+    "lazyload-js": "^1.0.0"
+  }
+}

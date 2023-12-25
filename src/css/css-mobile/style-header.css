@@ -1,0 +1,62 @@
+/* //////////////////////// HEADER /////////////////////////////////////////////////////////// */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr auto;
+    overflow: visible;
+  }
+  
+  .header-header {
+    display: grid;
+    grid-area: 1/1/1/7;
+    grid-template-columns: repeat(4, 1fr);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 5000;
+    height: 57.9833px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .header__photo {
+    z-index: 10000;
+    box-sizing: border-box;
+    max-width: 100%;
+    cursor: pointer;
+    grid-area: 1 / 2 / 1 / 4;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    padding-right: 10px;
+    transition: all 1s;
+    max-height: 35px;
+  }
+  
+  .header__photo:hover {
+    transition: 1s;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .header__phone {
+    display: none;
+  }
+  
+  .header__phone img {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .header__phonecall{
+    z-index: 3;
+    width: 2em;
+    cursor: pointer;
+    position: fixed;
+    top: .75em;
+    left: 1.5em;
+  }
+

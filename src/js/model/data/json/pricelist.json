@@ -1,0 +1,226 @@
+{
+  "cars": [
+    {
+      "name": "YANGWANG U8",
+      "brand": "YANGWANG",
+      "priceRU": "187.200",
+      "priceKZ": "158.800"
+    },
+    {
+      "name": "LOTUS ELETRE",
+      "brand": "LOTUS",
+      "priceRU": "143.800",
+      "priceKZ": "119.500"
+    },
+    {
+      "name": "HiPHi Z",
+      "brand": "HIPHI",
+      "priceRU": "105.900",
+      "priceKZ": "87.300"
+    },
+    {
+      "name": "LIXIANG L7",
+      "brand": "LIXIANG",
+      "priceRU": "54.100",
+      "priceKZ": "48.200"
+    },
+    {
+      "name": "LIXIANG L8",
+      "brand": "LIXIANG",
+      "priceRU": "56.500",
+      "priceKZ": "50.700"
+    },
+    {
+      "name": "LIXIANG L9",
+      "brand": "LIXIANG",
+      "priceRU": "67.200",
+      "priceKZ": "60.500"
+    },
+    {
+      "name": "AVATR 11",
+      "brand": "AVATR",
+      "priceRU": "54.700",
+      "priceKZ": "44.900"
+    },
+    {
+      "name": "ZEEKR 009",
+      "brand": "ZEEKR",
+      "priceRU": "92.500",
+      "priceKZ": "82.800"
+    },
+    {
+      "name": "ZEEKR 001",
+      "brand": "ZEEKR",
+      "priceRU": "63.300",
+      "priceKZ": "52.800"
+    },
+    {
+      "name": "ZEEKR X",
+      "brand": "ZEEKR",
+      "priceRU": "37.300",
+      "priceKZ": "29.800"
+    },
+    {
+      "name": "VOYAH FREE 2024",
+      "brand": "VOYAH",
+      "priceRU": "46.800",
+      "priceKZ": "40.200"
+    },
+    {
+      "name": "VOYAH DREAMER",
+      "brand": "VOYAH",
+      "priceRU": "68.100",
+      "priceKZ": "59.300"
+    },
+    {
+      "name": "XPENG G9",
+      "brand": "XPENG",
+      "priceRU": "68.600",
+      "priceKZ": "58.200"
+    },
+    {
+      "name": "XPENG G6",
+      "brand": "XPENG",
+      "priceRU": "52.100",
+      "priceKZ": "41.700"
+    },
+    {
+      "name": "BYD TANG EV",
+      "brand": "BYD",
+      "priceRU": "52.300",
+      "priceKZ": "44.400"
+    },
+    {
+      "name": "BYD SONG PLUS EV 2023",
+      "brand": "BYD",
+      "priceRU": "36.700",
+      "priceKZ": "29.200"
+    },
+    {
+      "name": "BYD SONG PLUS DM-i 2023",
+      "brand": "BYD",
+      "priceRU": "33.600",
+      "priceKZ": "30.400"
+    },
+    {
+      "name": "BYD YUAN PLUS",
+      "brand": "BYD",
+      "priceRU": "32.600",
+      "priceKZ": "25.500"
+    },
+    {
+      "name": "BYD SEAL DM-i",
+      "brand": "BYD",
+      "priceRU": "39.600",
+      "priceKZ": "36.300"
+    },
+    {
+      "name": "VOLKSWAGEN ID 4",
+      "brand": "VOLKSWAGEN",
+      "priceRU": "41.700",
+      "priceKZ": "34.400"
+    },
+    {
+      "name": "VOLKSWAGEN ID 6",
+      "brand": "VOLKSWAGEN",
+      "priceRU": "49.800",
+      "priceKZ": "40.200"
+    },
+    {
+      "name": "GEELY MONJARO",
+      "brand": "GEELY",
+      "priceRU": "37.900",
+      "priceKZ": "39.200"
+    },
+    {
+      "name": "TANK 500 Hi4-T",
+      "brand": "TANK",
+      "priceRU": "56.900",
+      "priceKZ": "56.200"
+    },
+    {
+      "name": "TANK 400 Hi4-T",
+      "brand": "TANK",
+      "priceRU": "50.500",
+      "priceKZ": "47.900"
+    },
+    {
+      "name": "NIO ET5",
+      "brand": "NIO",
+      "priceRU": "60.400",
+      "priceKZ": "50.600"
+    },
+    {
+      "name": "TESLA MODEL Y",
+      "brand": "TESLA",
+      "priceRU": "60.700",
+      "priceKZ": "50.900"
+    },
+    {
+      "name": "TOYOTA BZ4X",
+      "brand": "TOYOTA",
+      "priceRU": "38.100",
+      "priceKZ": "30.600"
+    },
+    {
+      "name": "DENZA D9",
+      "brand": "DENZA",
+      "priceRU": "75.600",
+      "priceKZ": "65.800"
+    },
+    {
+      "name": "CHANGAN UNI-K iDD",
+      "brand": "CHANGAN",
+      "priceRU": "35.800",
+      "priceKZ": "32.900"
+    },
+    {
+      "name": "HAVAL H5",
+      "brand": "HAVAL",
+      "priceRU": "33.700",
+      "priceKZ": "34.900"
+    },
+    {
+      "name": "POLAR STONE 01",
+      "brand": "POLARSTONE",
+      "priceRU": "56.200",
+      "priceKZ": "50.900"
+    },
+    {
+      "name": "Lync & Co 09 EM-P",
+      "brand": "LYNK",
+      "priceRU": "52.500",
+      "priceKZ": "52.100"
+    },
+    {
+      "name": "MERCEDES-BENZ EQE SUV",
+      "brand": "MERCEDESBENZ",
+      "priceRU": "82.100",
+      "priceKZ": "66.500"
+    },
+    {
+      "name": "MERCEDES-BENZ EQS SUV",
+      "brand": "MERCEDESBENZ",
+      "priceRU": "106.200",
+      "priceKZ": "87.900"
+    },
+    {
+      "name": "FORD EXPLORER",
+      "brand": "FORD",
+      "priceRU": "66.200",
+      "priceKZ": "76.900"
+    },
+    {
+      "name": "GAC GS8",
+      "brand": "GAC",
+      "priceRU": "39.500",
+      "priceKZ": "41.900"
+    },
+    {
+      "name": "LEOPARD 5",
+      "brand": "LEOPARD",
+      "priceRU": "60.500",
+      "priceKZ": "59.200"
+    }
+  ]
+}

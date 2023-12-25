@@ -1,0 +1,26 @@
+/*/////////////////////////// KUNTEYNIR //////////////////////////////////////////////////*/
+
+.kunteynir {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media only screen and (min-width:768px)and (orientation:portrait){
+    .kunteynir{
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+  
+  .section--title {
+    margin-top: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .section--subtitle {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+  }
