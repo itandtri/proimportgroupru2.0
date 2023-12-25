@@ -3,7 +3,7 @@
   display: grid;
 }
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (orientation: portrait) {
   .kunteynir {
     grid-template-columns: repeat(1, 1fr);
   }

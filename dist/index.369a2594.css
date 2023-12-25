@@ -8,9 +8,9 @@
 }
 
 body {
-  height: 100%;
   background-color: #f4f5f6;
   border-radius: 25px;
+  height: 100%;
 }
 
 .block {
@@ -21,8 +21,8 @@ body {
 
 .lazy-img {
   filter: blur(20px);
-  min-height: 138px;
   min-width: 220px;
+  min-height: 138px;
 }
 
 h3 {

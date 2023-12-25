@@ -1,13 +1,13 @@
-@media only screen and (min-width: 480px) {
+@media only screen and (width >= 480px) {
   .header__phonecall, #menu, #navcheck {
     display: none;
   }
 
   .visuallyhidden {
     clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
     border: 0;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     padding: 0;
     position: absolute;
@@ -15,7 +15,7 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (width <= 480px) {
   .menu--active {
     color: #1937b9;
   }
@@ -26,10 +26,10 @@
 
   .stripe-nav {
     z-index: 4;
-    height: .5px;
-    width: 200px;
     color: #2f2f2f;
     background-color: #949494;
+    width: 200px;
+    height: .5px;
     margin: .2em 3em;
   }
 
@@ -39,8 +39,8 @@
 
   .header__phonecall {
     z-index: 3;
-    width: 2em;
     cursor: pointer;
+    width: 2em;
     position: fixed;
     top: .75em;
     left: 1.5em;
@@ -49,9 +49,9 @@
   .header__photo {
     z-index: 10000;
     box-sizing: border-box;
-    max-width: 100%;
     cursor: pointer;
     grid-area: 1 / 2 / 1 / 4;
+    max-width: 100%;
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 30px;
@@ -95,11 +95,11 @@
   }
 
   label:before {
-    height: 80em;
     content: "";
     opacity: 0;
     pointer-events: none;
     background-color: #000000bf;
+    height: 80em;
     transition: opacity .5s cubic-bezier(.19, 1, .22, 1);
     position: fixed;
     inset: 58px 0 0;
@@ -118,10 +118,10 @@
   }
 
   label .burger:before, label .burger .bar, label .burger:after {
-    width: 100%;
-    height: 12%;
     content: "";
     background: #2f2f2f;
+    width: 100%;
+    height: 12%;
     transition: all .5s cubic-bezier(.19, 1, .22, 1);
     display: block;
     position: absolute;
@@ -159,16 +159,16 @@
     display: flex;
     position: fixed;
     inset: 57px 0 0;
-    transform: translate3d(0, 0, 0);
+    transform: translateX(100%);
   }
 
   nav:before {
     z-index: 0;
-    width: 25em;
     content: "";
     transform-origin: 0 100%;
     will-change: transform;
     background: #fff;
+    width: 25em;
     transition: transform .5s cubic-bezier(.19, 1, .22, 1);
     position: absolute;
     top: 0;
@@ -178,13 +178,13 @@
   }
 }
 
-@media only screen and (max-width: 480px) and (min-width: 40em) {
+@media only screen and (width <= 480px) and (width >= 40em) {
   nav:before {
     width: 40em;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (width <= 480px) {
   nav a {
     color: #2f2f2f;
     margin: .3em 0;
@@ -196,7 +196,7 @@
     transform: translateX(-100%);
   }
 
-  nav a:nth-child(1) {
+  nav a:first-child {
     transition-delay: 0s, .1s;
   }
 
@@ -294,9 +294,9 @@
 
   .visuallyhidden {
     clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
     border: 0;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     padding: 0;
     position: absolute;

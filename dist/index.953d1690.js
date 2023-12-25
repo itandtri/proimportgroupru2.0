@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"027Y4":[function(require,module,exports) {
+})({"2uzF8":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -150,7 +150,7 @@ var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "dcfd9636953d1690";
 "use strict";
-/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
+/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
   HMRMessage,
@@ -214,43 +214,56 @@ function Module(moduleName) {
 }
 module.bundle.Module = Module;
 module.bundle.hotData = {};
-var checkedAssets, assetsToDispose, assetsToAccept /*: Array<[ParcelRequire, string]> */ ;
+var checkedAssets /*: {|[string]: boolean|} */ , assetsToDispose /*: Array<[ParcelRequire, string]> */ , assetsToAccept /*: Array<[ParcelRequire, string]> */ ;
 function getHostname() {
     return HMR_HOST || (location.protocol.indexOf("http") === 0 ? location.hostname : "localhost");
 }
 function getPort() {
     return HMR_PORT || location.port;
-} // eslint-disable-next-line no-redeclare
+}
+// eslint-disable-next-line no-redeclare
 var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
     var hostname = getHostname();
     var port = getPort();
     var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
-    var ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/"); // Web extension context
-    var extCtx = typeof chrome === "undefined" ? typeof browser === "undefined" ? null : browser : chrome; // Safari doesn't support sourceURL in error stacks.
+    var ws;
+    try {
+        ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
+    } catch (err) {
+        if (err.message) console.error(err.message);
+        ws = {};
+    }
+    // Web extension context
+    var extCtx = typeof browser === "undefined" ? typeof chrome === "undefined" ? null : chrome : browser;
+    // Safari doesn't support sourceURL in error stacks.
     // eval may also be disabled via CSP, so do a quick check.
     var supportsSourceURL = false;
     try {
         (0, eval)('throw new Error("test"); //# sourceURL=test.js');
     } catch (err) {
         supportsSourceURL = err.stack.includes("test.js");
-    } // $FlowFixMe
-    ws.onmessage = async function(event) {
+    }
+    // $FlowFixMe
+    ws.onmessage = async function(event /*: {data: string, ...} */ ) {
         checkedAssets = {} /*: {|[string]: boolean|} */ ;
         assetsToAccept = [];
         assetsToDispose = [];
-        var data = JSON.parse(event.data);
+        var data /*: HMRMessage */  = JSON.parse(event.data);
         if (data.type === "update") {
             // Remove error overlay if there is one
             if (typeof document !== "undefined") removeErrorOverlay();
-            let assets = data.assets.filter((asset)=>asset.envHash === HMR_ENV_HASH); // Handle HMR Update
+            let assets = data.assets.filter((asset)=>asset.envHash === HMR_ENV_HASH);
+            // Handle HMR Update
             let handled = assets.every((asset)=>{
                 return asset.type === "css" || asset.type === "js" && hmrAcceptCheck(module.bundle.root, asset.id, asset.depsByBundle);
             });
             if (handled) {
-                console.clear(); // Dispatch custom event so other runtimes (e.g React Refresh) are aware.
+                console.clear();
+                // Dispatch custom event so other runtimes (e.g React Refresh) are aware.
                 if (typeof window !== "undefined" && typeof CustomEvent !== "undefined") window.dispatchEvent(new CustomEvent("parcelhmraccept"));
-                await hmrApplyUpdates(assets); // Dispose all old assets.
+                await hmrApplyUpdates(assets);
+                // Dispose all old assets.
                 let processedAssets = {} /*: {|[string]: boolean|} */ ;
                 for(let i = 0; i < assetsToDispose.length; i++){
                     let id = assetsToDispose[i][1];
@@ -258,7 +271,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
                         hmrDispose(assetsToDispose[i][0], id);
                         processedAssets[id] = true;
                     }
-                } // Run accept callbacks. This will also re-execute other disposed assets in topological order.
+                }
+                // Run accept callbacks. This will also re-execute other disposed assets in topological order.
                 processedAssets = {};
                 for(let i = 0; i < assetsToAccept.length; i++){
                     let id = assetsToAccept[i][1];
@@ -278,13 +292,14 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
             if (typeof document !== "undefined") {
                 // Render the fancy html overlay
                 removeErrorOverlay();
-                var overlay = createErrorOverlay(data.diagnostics.html); // $FlowFixMe
+                var overlay = createErrorOverlay(data.diagnostics.html);
+                // $FlowFixMe
                 document.body.appendChild(overlay);
             }
         }
     };
     ws.onerror = function(e) {
-        console.error(e.message);
+        if (e.message) console.error(e.message);
     };
     ws.onclose = function() {
         console.warn("[parcel] \uD83D\uDEA8 Connection to the HMR server was lost");
@@ -294,7 +309,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] ✨ Error resolved");
+        console.log("[parcel] \u2728 Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -310,13 +325,13 @@ ${frame.code}`;
         errorHTML += `
       <div>
         <div style="font-size: 18px; font-weight: bold; margin-top: 20px;">
-          🚨 ${diagnostic.message}
+          \u{1F6A8} ${diagnostic.message}
         </div>
         <pre>${stack}</pre>
         <div>
           ${diagnostic.hints.map((hint)=>"<div>\uD83D\uDCA1 " + hint + "</div>").join("")}
         </div>
-        ${diagnostic.documentation ? `<div>📝 <a style="color: violet" href="${diagnostic.documentation}" target="_blank">Learn more</a></div>` : ""}
+        ${diagnostic.documentation ? `<div>\u{1F4DD} <a style="color: violet" href="${diagnostic.documentation}" target="_blank">Learn more</a></div>` : ""}
       </div>
     `;
     }
@@ -344,12 +359,16 @@ function getParents(bundle, id) /*: Array<[ParcelRequire, string]> */ {
     return parents;
 }
 function updateLink(link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
     var newLink = link.cloneNode();
     newLink.onload = function() {
         if (link.parentNode !== null) // $FlowFixMe
         link.parentNode.removeChild(link);
     };
-    newLink.setAttribute("href", link.getAttribute("href").split("?")[0] + "?" + Date.now()); // $FlowFixMe
+    newLink.setAttribute("href", // $FlowFixMe
+    href.split("?")[0] + "?" + Date.now());
+    // $FlowFixMe
     link.parentNode.insertBefore(newLink, link.nextSibling);
 }
 var cssTimeout = null;
@@ -359,7 +378,7 @@ function reloadCSS() {
         var links = document.querySelectorAll('link[rel="stylesheet"]');
         for(var i = 0; i < links.length; i++){
             // $FlowFixMe[incompatible-type]
-            var href = links[i].getAttribute("href");
+            var href /*: string */  = links[i].getAttribute("href");
             var hostname = getHostname();
             var servedFromHMRServer = hostname === "localhost" ? new RegExp("^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):" + getPort()).test(href) : href.indexOf(hostname + ":" + getPort());
             var absolute = /^https?:\/\//i.test(href) && href.indexOf(location.origin) !== 0 && !servedFromHMRServer;
@@ -408,15 +427,10 @@ async function hmrApplyUpdates(assets) {
             let promises = assets.map((asset)=>{
                 var _hmrDownload;
                 return (_hmrDownload = hmrDownload(asset)) === null || _hmrDownload === void 0 ? void 0 : _hmrDownload.catch((err)=>{
-                    // Web extension bugfix for Chromium
-                    // https://bugs.chromium.org/p/chromium/issues/detail?id=1255412#c12
-                    if (extCtx && extCtx.runtime && extCtx.runtime.getManifest().manifest_version == 3) {
-                        if (typeof ServiceWorkerGlobalScope != "undefined" && global instanceof ServiceWorkerGlobalScope) {
-                            extCtx.runtime.reload();
-                            return;
-                        }
-                        asset.url = extCtx.runtime.getURL("/__parcel_hmr_proxy__?url=" + encodeURIComponent(asset.url + "?t=" + Date.now()));
-                        return hmrDownload(asset);
+                    // Web extension fix
+                    if (extCtx && extCtx.runtime && extCtx.runtime.getManifest().manifest_version == 3 && typeof ServiceWorkerGlobalScope != "undefined" && global instanceof ServiceWorkerGlobalScope) {
+                        extCtx.runtime.reload();
+                        return;
                     }
                     throw err;
                 });
@@ -436,7 +450,7 @@ async function hmrApplyUpdates(assets) {
         });
     }
 }
-function hmrApply(bundle, asset) {
+function hmrApply(bundle /*: ParcelRequire */ , asset /*:  HMRAsset */ ) {
     var modules = bundle.modules;
     if (!modules) return;
     if (asset.type === "css") reloadCSS();
@@ -456,7 +470,7 @@ function hmrApply(bundle, asset) {
             if (supportsSourceURL) // Global eval. We would use `new Function` here but browser
             // support for source maps is better with eval.
             (0, eval)(asset.output);
-             // $FlowFixMe
+            // $FlowFixMe
             let fn = global.parcelHotUpdate[asset.id];
             modules[asset.id] = [
                 fn,
@@ -475,17 +489,19 @@ function hmrDelete(bundle, id) {
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
-        } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
+        }
+        // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
         delete modules[id];
-        delete bundle.cache[id]; // Now delete the orphans.
+        delete bundle.cache[id];
+        // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
     } else if (bundle.parent) hmrDelete(bundle.parent, id);
 }
-function hmrAcceptCheck(bundle, id, depsByBundle) {
+function hmrAcceptCheck(bundle /*: ParcelRequire */ , id /*: string */ , depsByBundle /*: ?{ [string]: { [string]: string } }*/ ) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
-     // Traverse parents breadth first. All possible ancestries must accept the HMR update, or we'll reload.
+    // Traverse parents breadth first. All possible ancestries must accept the HMR update, or we'll reload.
     let parents = getParents(module.bundle.root, id);
     let accepted = false;
     while(parents.length > 0){
@@ -506,7 +522,7 @@ function hmrAcceptCheck(bundle, id, depsByBundle) {
     }
     return accepted;
 }
-function hmrAcceptCheckOne(bundle, id, depsByBundle) {
+function hmrAcceptCheckOne(bundle /*: ParcelRequire */ , id /*: string */ , depsByBundle /*: ?{ [string]: { [string]: string } }*/ ) {
     var modules = bundle.modules;
     if (!modules) return;
     if (depsByBundle && !depsByBundle[bundle.HMR_BUNDLE_ID]) {
@@ -530,7 +546,7 @@ function hmrAcceptCheckOne(bundle, id, depsByBundle) {
         return true;
     }
 }
-function hmrDispose(bundle, id) {
+function hmrDispose(bundle /*: ParcelRequire */ , id /*: string */ ) {
     var cached = bundle.cache[id];
     bundle.hotData[id] = {};
     if (cached && cached.hot) cached.hot.data = bundle.hotData[id];
@@ -539,9 +555,10 @@ function hmrDispose(bundle, id) {
     });
     delete bundle.cache[id];
 }
-function hmrAccept(bundle, id) {
+function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     // Execute the module.
-    bundle(id); // Run the accept callbacks in the new version of the module.
+    bundle(id);
+    // Run the accept callbacks in the new version of the module.
     var cached = bundle.cache[id];
     if (cached && cached.hot && cached.hot._acceptCallbacks.length) cached.hot._acceptCallbacks.forEach(function(cb) {
         var assetsToAlsoAccept = cb(function() {
@@ -550,7 +567,8 @@ function hmrAccept(bundle, id) {
         if (assetsToAlsoAccept && assetsToAccept.length) {
             assetsToAlsoAccept.forEach(function(a) {
                 hmrDispose(a[0], a[1]);
-            }); // $FlowFixMe[method-unbinding]
+            });
+            // $FlowFixMe[method-unbinding]
             assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
         }
     });
@@ -583,7 +601,7 @@ if (window.innerWidth < 700) (0, _stockSliderCreate.stockSliderCreate)(document.
 (0, _lazyStockSlider.lazyStockSlider)();
 
 },{"../carcatalog/variables":"aC3lV","../model/data/json/stock.json":"5U93E","../globalscripts/convertStockJSON.js":"bKNf9","../newcars_slider/stockSliderCreate":"95gvb","../newcars_slider/stockSliderContent":"9e9px","../newcars_slider/stockSliderContainer":"1IJBw","../newcars_slider/carSliderButtons":"fD8PO","../newcars_slider/stockSliderTranslateX":"7wcuw","../newcars_slider/carSliderListeners":"bmB9u","../newcars_slider/lazyStockSlider":"hdCq9","../globalscripts/addPrice.js":"5Tvwu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5U93E":[function(require,module,exports) {
-module.exports = JSON.parse('{"cars":[{"name":"LIXIANG L7","brand":"LIXIANG","city":"АЛМАТЫ","status":"Цена \'Под Ключ\'","year":"2023","img":["/data/stock_cars/lil7pro/lil7.png"],"type":"последовательный гибрид","nedc":"1100 km","edition":"PRO","engine":"449 л/с","drive":"полный","details":"/data/pdf/li.pdf","phone":"+79818005080","youtube":"https://youtu.be/xbTuJiEHPFM?si=vbPEL_UD72PGADdV"},{"name":"LEOPARD 5","brand":"LEOPARD","status":"Цена \'Под Ключ\'","year":"2023","img":["data/carimg/leopard5.png"],"type":"PHEV","edition":"exploration","engine":"194 + 660 л/с","drive":"полный","details":"/data/pdf/leopard5.pdf","phone":"+79818005080","review":"","fuel":"1.8 л/100км"},{"name":"MERCEDES-BENZ EQE SUV","brand":"MERCEDESBENZ","city":"АЛМАТЫ","status":"Цена \'Под Ключ\'","year":"2023","img":["data/carimg/mercedes-benzeqesuv.png"],"type":"электромобиль","nedc":"609 km","edition":"500 4MATIC","engine":"408 л/с","drive":"полный","details":"/data/pdf/mbeqesuv.pdf","phone":"+79818005080"},{"name":"HAVAL H5","brand":"HAVAL","city":"АЛМАТЫ","status":"Цена \'Под Ключ\'","year":"2023","img":["data/carimg/havalh5.png"],"type":"бензин","edition":"2.0T AWD","fuel":"8.8 л/100 км","engine":"224 л/с","drive":"полный","details":"/data/pdf/havalh5.pdf","phone":"+79818005080"},{"name":"POLAR STONE 01","brand":"POLARSTONE","status":"Цена \'Под Ключ\'","year":"2023","img":["/data/carimg/polarstone01.png"],"type":"последовательный гибрид","edition":"7 seats version","engine":"476 л/с","drive":"полный","details":"/data/pdf/polarstone01.pdf","phone":"+79818005080","review":"","nedc":"1115 km"},{"name":"AVATR 11","brand":"AVATR","status":"Цена \'Под Ключ\'","year":"2023","img":["/data/stock_cars/avatr11/avatr11.png"],"edition":"116kw AWD 5-seats","type":"электромобиль","drive":"полный","nedc":"700 km","engine":"578 л/с","details":"/data/pdf/avatr11.pdf","phone":"+79818005080"},{"name":"VOYAH FREE 2024","brand":"VOYAH","status":"В НАЛИЧИИ","year":"2022","img":["/data/carimg/voyahfree2024.png"],"type":"последовательный гибрид","nedc":"860 km","edition":"exclusive luxury","engine":"694 л/с","drive":"полный","details":"/data/pdf/voyahfree.pdf","phone":"+79110024444","review":"","youtube":"https://youtu.be/2E20rNHyQSU?si=Hrv7A4GfEZkeWl-T"},{"name":"TANK 400 Hi4-T","brand":"TANK","status":"Цена \'Под Ключ\'","year":"2023","img":["/data/stock_cars/tank400/tank400hi4-t.png"],"type":"PHEV","edition":"functional","engine":"415 л/с","drive":"полный","details":"/data/pdf/tank400hi4-t.pdf","phone":"+79818005080","review":"","fuel":"2.6 л/100км"}]}');
+module.exports = JSON.parse('{"cars":[{"name":"LIXIANG L7","brand":"LIXIANG","city":"\u0410\u041B\u041C\u0410\u0422\u042B","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["/data/stock_cars/lil7pro/lil7.png"],"type":"\u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0433\u0438\u0431\u0440\u0438\u0434","nedc":"1100 km","edition":"PRO","engine":"449 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/li.pdf","phone":"+79818005080","youtube":"https://youtu.be/xbTuJiEHPFM?si=vbPEL_UD72PGADdV"},{"name":"LEOPARD 5","brand":"LEOPARD","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["data/carimg/leopard5.png"],"type":"PHEV","edition":"exploration","engine":"194 + 660 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/leopard5.pdf","phone":"+79818005080","review":"","fuel":"1.8 \u043B/100\u043A\u043C"},{"name":"MERCEDES-BENZ EQE SUV","brand":"MERCEDESBENZ","city":"\u0410\u041B\u041C\u0410\u0422\u042B","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["data/carimg/mercedes-benzeqesuv.png"],"type":"\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043C\u043E\u0431\u0438\u043B\u044C","nedc":"609 km","edition":"500 4MATIC","engine":"408 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/mbeqesuv.pdf","phone":"+79818005080"},{"name":"HAVAL H5","brand":"HAVAL","city":"\u0410\u041B\u041C\u0410\u0422\u042B","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["data/carimg/havalh5.png"],"type":"\u0431\u0435\u043D\u0437\u0438\u043D","edition":"2.0T AWD","fuel":"8.8 \u043B/100 \u043A\u043C","engine":"224 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/havalh5.pdf","phone":"+79818005080"},{"name":"POLAR STONE 01","brand":"POLARSTONE","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["/data/carimg/polarstone01.png"],"type":"\u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0433\u0438\u0431\u0440\u0438\u0434","edition":"7 seats version","engine":"476 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/polarstone01.pdf","phone":"+79818005080","review":"","nedc":"1115 km"},{"name":"AVATR 11","brand":"AVATR","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["/data/stock_cars/avatr11/avatr11.png"],"edition":"116kw AWD 5-seats","type":"\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043C\u043E\u0431\u0438\u043B\u044C","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","nedc":"700 km","engine":"578 \u043B/\u0441","details":"/data/pdf/avatr11.pdf","phone":"+79818005080"},{"name":"VOYAH FREE 2024","brand":"VOYAH","status":"\u0412 \u041D\u0410\u041B\u0418\u0427\u0418\u0418","year":"2022","img":["/data/carimg/voyahfree2024.png"],"type":"\u043F\u043E\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0433\u0438\u0431\u0440\u0438\u0434","nedc":"860 km","edition":"exclusive luxury","engine":"694 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/voyahfree.pdf","phone":"+79110024444","review":"","youtube":"https://youtu.be/2E20rNHyQSU?si=Hrv7A4GfEZkeWl-T"},{"name":"TANK 400 Hi4-T","brand":"TANK","status":"\u0426\u0435\u043D\u0430 \'\u041F\u043E\u0434 \u041A\u043B\u044E\u0447\'","year":"2023","img":["/data/stock_cars/tank400/tank400hi4-t.png"],"type":"PHEV","edition":"functional","engine":"415 \u043B/\u0441","drive":"\u043F\u043E\u043B\u043D\u044B\u0439","details":"/data/pdf/tank400hi4-t.pdf","phone":"+79818005080","review":"","fuel":"2.6 \u043B/100\u043A\u043C"}]}');
 
 },{}],"bKNf9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -658,7 +676,7 @@ function stockSliderContainer() {
 <div class ='stockSlider'>
 <div class = 'stockSlider__container contHeigh'>
 
-<h3 style='font-weight:bold; color:#2f2f2f'> ГОРЯЧEЕ ПРЕДЛОЖЕНИE</h3>
+<h3 style='font-weight:bold; color:#2f2f2f'> \u{413}\u{41E}\u{420}\u{42F}\u{427}E\u{415} \u{41F}\u{420}\u{415}\u{414}\u{41B}\u{41E}\u{416}\u{415}\u{41D}\u{418}E</h3>
 
  <div class = 'stockSlider__photoslider'>
   <div class = 'stockSlider__photos'>
@@ -683,11 +701,11 @@ ${y}
 
   <div class='stockSlider__textDescription'>
   <h2 style="color:red;font-size:20px"> ${e.status} </h2>
-  <p>• <b> год:</b> ${e.year}</p>
-  <p>• <b> тип:</b> ${e.type}</p>
-  <p>• <b> мощность:</b> ${e.engine}</p>
-  <p>• <b> ${e.nedc ? "запас хода:" : "расход топлива:"}</b> ${e.nedc ? e.nedc : e.fuel}</p>
-  <p>• <b> привод:</b> ${e.drive}</p>
+  <p>\u{2022} <b> \u{433}\u{43E}\u{434}:</b> ${e.year}</p>
+  <p>\u{2022} <b> \u{442}\u{438}\u{43F}:</b> ${e.type}</p>
+  <p>\u{2022} <b> \u{43C}\u{43E}\u{449}\u{43D}\u{43E}\u{441}\u{442}\u{44C}:</b> ${e.engine}</p>
+  <p>\u{2022} <b> ${e.nedc ? "\u0437\u0430\u043F\u0430\u0441 \u0445\u043E\u0434\u0430:" : "\u0440\u0430\u0441\u0445\u043E\u0434 \u0442\u043E\u043F\u043B\u0438\u0432\u0430:"}</b> ${e.nedc ? e.nedc : e.fuel}</p>
+  <p>\u{2022} <b> \u{43F}\u{440}\u{438}\u{432}\u{43E}\u{434}:</b> ${e.drive}</p>
   </div>
 
    
@@ -702,7 +720,7 @@ ${y}
 <div class='stockSlider__bottomButtons'>
 <div class="media_block stock">
 <div class="submenu_button stock"><a href="${e.telegram ? e.telegram : "https://t.me/ProImportGroup"}"><img src="/data/telegram.png" ></a></div>
-<div class=" submenu_button stock"><a href="https://wa.me/${e.phone}?text=Здравствуйте,%20интересует%20ваше%20объявление%20о%20продаже%20машины%20${e.name}. "><img src="/data/whatsapp.png" ></a></div>
+<div class=" submenu_button stock"><a href="https://wa.me/${e.phone}?text=\u{417}\u{434}\u{440}\u{430}\u{432}\u{441}\u{442}\u{432}\u{443}\u{439}\u{442}\u{435},%20\u{438}\u{43D}\u{442}\u{435}\u{440}\u{435}\u{441}\u{443}\u{435}\u{442}%20\u{432}\u{430}\u{448}\u{435}%20\u{43E}\u{431}\u{44A}\u{44F}\u{432}\u{43B}\u{435}\u{43D}\u{438}\u{435}%20\u{43E}%20\u{43F}\u{440}\u{43E}\u{434}\u{430}\u{436}\u{435}%20\u{43C}\u{430}\u{448}\u{438}\u{43D}\u{44B}%20${e.name}. "><img src="/data/whatsapp.png" ></a></div>
 <div class=" submenu_button stock"><a href="https://vk.com/proimportgroup"><img src="/data/vk.png" ></a></div>
 
 <div class=" submenu_button stock"><a href="${e.youtube ? e.youtube : "https://www.youtube.com/channel/UCQuilD9fF_lgUBmitNJM7nQ"}"><img src="/data/youtube.png" ></a></div>
@@ -714,7 +732,7 @@ ${y}
 
 <p class="stock-details" style="text-align:center"> 
 <a href="${e.details}" style="color:#1937b9;cursor:pointer;font-family:open-sans-light;font-size:16px;margin-left:auto;margin-right:auto;">
-подробнее</a> 
+\u{43F}\u{43E}\u{434}\u{440}\u{43E}\u{431}\u{43D}\u{435}\u{435}</a> 
 </p>
 
 </div>
@@ -731,8 +749,8 @@ parcelHelpers.export(exports, "carSliderButtons", ()=>carSliderButtons);
 function carSliderButtons() {
     document.querySelector(".stockContainer").insertAdjacentHTML("beforeend", `
     <div class ='stockSlider__button__container'>
-    <button class='stockSLider__button stockBtnLeft'> ← </button>
-    <button class='stockSLider__button stockBtnRight'> → </button>
+    <button class='stockSLider__button stockBtnLeft'> \u{2190} </button>
+    <button class='stockSLider__button stockBtnRight'> \u{2192} </button>
     </div>`);
 }
 
@@ -834,6 +852,6 @@ function lazyStockSlider() {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["027Y4","dMeSN"], "dMeSN", "parcelRequiref68e")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2uzF8","dMeSN"], "dMeSN", "parcelRequiref68e")
 
 //# sourceMappingURL=index.953d1690.js.map
