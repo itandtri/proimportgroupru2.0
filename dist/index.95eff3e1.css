@@ -1,0 +1,59 @@
+.header {
+  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  overflow: visible;
+}
+
+.header-header {
+  width: 100%;
+  z-index: 5000;
+  height: 57.9833px;
+  background-color: #fff;
+  grid-area: 1 / 1 / 1 / 7;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 2px 2px 1px #0003;
+}
+
+.header__photo {
+  z-index: 10000;
+  box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  max-height: 35px;
+  grid-area: 1 / 2 / 1 / 4;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 30px;
+  padding-right: 10px;
+  transition: all 1s;
+}
+
+.header__photo:hover {
+  opacity: .7;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.header__phone {
+  display: none;
+}
+
+.header__phone img {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.header__phonecall {
+  z-index: 3;
+  width: 2em;
+  cursor: pointer;
+  position: fixed;
+  top: .75em;
+  left: 1.5em;
+}
+
+/*# sourceMappingURL=index.95eff3e1.css.map */

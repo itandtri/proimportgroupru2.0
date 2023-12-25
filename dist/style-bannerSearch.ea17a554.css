@@ -1,0 +1,81 @@
+.carsearcher-mobile {
+  display: none;
+}
+
+.subsection--content.mainMenu {
+  grid-template-rows: auto;
+}
+
+.carsearcher-content {
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.banner-find {
+  -webkit-appearance: none;
+  width: 290px;
+  text-align: left;
+  text-indent: 35px;
+  height: 40px;
+  cursor: pointer;
+  background: url("icon-search.f1663c42.svg") 10px / 15px no-repeat;
+  border: .1px solid #a4a8a8;
+  border-radius: 25px;
+}
+
+.tgsearch {
+  background: url("telegram.2f877dc8.png") 25px / 25px no-repeat;
+}
+
+.banner-subsearcher {
+  color: #1937b9;
+}
+
+.searcherGrid {
+  display: block;
+}
+
+.contHeigh {
+  max-height: 512px;
+  padding: 20px 0;
+}
+
+.banner {
+  max-width: 100%;
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+.banner--payment {
+  border-top: .5px solid;
+  margin: 30px 50px 0;
+  padding-top: 20px;
+}
+
+.banner-search.banner.banner-back {
+  text-align: center;
+  text-indent: 0;
+  color: #1937b9;
+  cursor: pointer;
+  border-color: #1937b9;
+  margin: 5px;
+}
+
+.banner-search {
+  -webkit-appearance: none;
+  text-indent: 70px;
+  text-align: left;
+  cursor: pointer;
+  border: .1px solid #a4a8a8;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.banner-search.banner.searcherGrid span {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=style-bannerSearch.ea17a554.css.map */

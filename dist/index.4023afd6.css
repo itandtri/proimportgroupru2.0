@@ -1,0 +1,25 @@
+.kunteynir {
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .kunteynir {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.section--title {
+  margin-top: 25px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section--subtitle {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.4023afd6.css.map */

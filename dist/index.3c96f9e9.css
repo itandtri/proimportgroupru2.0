@@ -1,0 +1,136 @@
+.stockContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  display: grid;
+  overflow: hidden;
+}
+
+.stockSlider {
+  grid-area: 1 / 1 / 1 / 2;
+  transition: transform 1s;
+}
+
+.dots__dot {
+  height: 4px;
+  width: 4px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: all .5s;
+}
+
+.dots__dot--active {
+  background-color: #1937b9;
+}
+
+.stockSlider__container h2 {
+  grid-area: 1 / 1 / 1 / 3;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.stockSlider__photos {
+  height: 200px;
+  grid-template-rows: 1fr;
+  display: grid;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.stockSlider__photoslider {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.stockSlider__photos__img {
+  width: 100%;
+  grid-area: 1 / 1 / 1 / 3;
+}
+
+.lazystockslider {
+  height: 200px;
+  filter: blur(20px);
+}
+
+.stockSlider__textContainer {
+  text-align: left;
+  grid-area: 3 / 1 / 3 / 3;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  display: grid;
+}
+
+.stockSlider__name {
+  text-align: center;
+  grid-column: 1 / 3;
+}
+
+.stockSlider__name h3 {
+  font-weight: bold;
+}
+
+.stockSlider__textDescription {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a.stockSlider__phone {
+  text-align: left;
+  padding-left: 60px;
+}
+
+.stockSLider__price a {
+  text-align: right;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.stockSlider__price {
+  text-align: right;
+  grid-column: 2 / 3;
+}
+
+.stockSlider__container p {
+  text-align: left;
+}
+
+.stockSlider__bottomButtons {
+  max-width: 100%;
+  grid-area: 4 / 1 / 4 / 3;
+  grid-template-columns: repeat(2, auto);
+  margin: 20px auto 0;
+  padding: 10px;
+  display: grid;
+}
+
+.stockSlider__phone {
+  color: #1937b9;
+  cursor: pointer;
+  font-family: open-sans-light;
+  font-size: 16px;
+}
+
+.stockSlider__details a {
+  color: #1937b9;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: open-sans-light;
+  font-size: 16px;
+}
+
+.stockSLider__button {
+  color: #2f2f2f;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background: #ffffffb3;
+  border: none;
+  border-radius: 50%;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=index.3c96f9e9.css.map */
