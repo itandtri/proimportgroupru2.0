@@ -6,12 +6,12 @@
 }
 
 .header-header {
-  width: 100%;
   z-index: 5000;
-  height: 57.9833px;
   background-color: #fff;
   grid-area: 1 / 1 / 1 / 7;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 57.9833px;
   display: grid;
   position: sticky;
   top: 0;
@@ -21,10 +21,10 @@
 .header__photo {
   z-index: 10000;
   box-sizing: border-box;
-  max-width: 100%;
   cursor: pointer;
-  max-height: 35px;
   grid-area: 1 / 2 / 1 / 4;
+  max-width: 100%;
+  max-height: 35px;
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 30px;
@@ -49,8 +49,8 @@
 
 .header__phonecall {
   z-index: 3;
-  width: 2em;
   cursor: pointer;
+  width: 2em;
   position: fixed;
   top: .75em;
   left: 1.5em;

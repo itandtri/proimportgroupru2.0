@@ -13,14 +13,14 @@
 
 .banner-find {
   -webkit-appearance: none;
-  width: 290px;
   text-align: left;
   text-indent: 35px;
-  height: 40px;
   cursor: pointer;
   background: url("icon-search.f1663c42.svg") 10px / 15px no-repeat;
   border: .1px solid #a4a8a8;
   border-radius: 25px;
+  width: 290px;
+  height: 40px;
 }
 
 .tgsearch {

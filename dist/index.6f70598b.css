@@ -5,25 +5,25 @@
 }
 
 .footer--kunteynir {
-  max-width: 300px;
   grid-column: 1 / 2;
+  max-width: 300px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .footer--info {
-  max-width: 300px;
   grid-column: 1 / 2;
   row-gap: 25px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
 }
 
 .footer--img {
-  width: 60px;
   grid-column: 1 / 2;
+  width: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,9 +66,9 @@ a.footer-h:hover, .footer-text li.footer-h:hover {
 }
 
 .footer--lastimg {
+  grid-column: 1 / 2;
   width: 230px;
   max-height: 16px;
-  grid-column: 1 / 2;
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;

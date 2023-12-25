@@ -11,12 +11,12 @@
 
 .subsection--content--noclick {
   text-align: center;
-  width: 100%;
   box-sizing: border-box;
   cursor: pointer;
   background-color: #ffffffb1;
   border-radius: 25px;
   grid-template-rows: 32px 220px auto 1fr;
+  width: 100%;
   padding: 20px;
   transition: all .5s linear;
   display: grid;
@@ -43,10 +43,10 @@
 }
 
 .subsection--img {
+  border-radius: 25px;
   min-width: 320px;
   max-width: 320px;
   max-height: 201px;
-  border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,12 +59,12 @@
 }
 
 .carinfo__button {
-  min-width: 42px;
-  min-height: 32px;
   color: #1937b9;
   background-color: #fbfbfb;
   border-style: none;
   border-radius: 10px;
+  min-width: 42px;
+  min-height: 32px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 23px;
@@ -125,8 +125,8 @@
 }
 
 .content-kunteynir-18-19 {
-  min-height: 500px;
   grid-gap: 15px 15px;
+  min-height: 500px;
   display: grid;
 }
 
@@ -163,10 +163,10 @@
 .navigation-catalog-button {
   cursor: pointer;
   color: #2f2f2f;
-  width: 100%;
   background-color: #fff;
   border-style: none;
   border-radius: 25px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -207,8 +207,8 @@
 }
 
 .dotArrow img {
-  width: 20px;
   box-sizing: border-box;
+  width: 20px;
 }
 
 .backBtn {
