@@ -14,7 +14,7 @@ padding:25px
     transform: translateY(50px);
     transition: transform 1s, opacity 1s;
 }
-
+ 
 #container--blocks{
     grid-column: 1/7;
     display: grid;
