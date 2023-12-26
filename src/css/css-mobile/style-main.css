@@ -12,40 +12,11 @@
     animation-name: delayingActive;
     animation-duration: 2s;
     background-image: url("/dist/data/indexphoto.png");
+
   background-size: 100%;
   }
-  
-.main.about{
-  background-blend-mode: multiply;
-  background-image: url("/dist/data/pcc.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
-  
-}
-
-.main.business{
-  background-blend-mode: multiply;
-  background-image: url("/dist/data/indexbusiness2.jpeg");
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.main.contacts{
-  background-blend-mode: multiply;
-  background-image: url("/dist/data/maincontacts.png");
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.main.status{
-  background-blend-mode: multiply;
-  background-image: url("/dist/data/status.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 
-.main.shipping{
-  background-blend-mode: multiply;
-  background-image: url("/dist/data/shipping2.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 @media screen and (min-width:800px){
 .banner-find-h {
@@ -54,7 +25,7 @@ margin-top: 0;
 }
 }
 
-@media screen and (max-width:700px) {
+
   .main.about {
     background-blend-mode: multiply;
     background-image: url("/dist/data/pccmobile.jpg");
@@ -85,7 +56,7 @@ margin-top: 0;
     }
     
 
-}
+
 
 
   .main-headtext {

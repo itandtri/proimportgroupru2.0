@@ -1,0 +1,247 @@
+/* ///////////////////////////////// MAIN ///////////////////////////////////////////// */
+
+.main {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+  
+      text-align: center;
+      display: grid;
+      grid-column:1/7;
+      grid-template-columns: repeat(6, 1fr);
+      max-width: 100%;
+      animation-name: delayingActive;
+      animation-duration: 2s;
+      background-image: url("/dist/data/indexphoto2.png");
+    background-size: 100%;
+    }
+    
+  
+    .main.contacts{
+      background-blend-mode: multiply;
+      background-image: url("/dist/data/maincontacts.png");
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+  
+  
+    
+    .main-headtext {
+      font-size: 40px;
+      grid-area: 1/2/1/6;
+      margin-top: 25px;
+      font-family: "gilroy-extrabold";
+      letter-spacing: -1px;
+    }
+    
+    .main-subtext--1 {
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      grid-area: 2/2/2/6;
+    }
+    
+    .main-photo {
+      width: 100%;
+      grid-area: 3/1/3/7;
+    }
+    
+    .main-container{
+      width: 100%;
+      grid-area: 3/2/3/6;
+    }
+   /* .main-subtext--2 {
+      font-size: 30px;
+      padding-bottom: 25px;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      grid-area: 4/2/4/6;
+    }*/
+    
+    .submenu {
+    display:grid;
+    grid-area: 2/2/2/6;
+    
+    grid-template-columns: auto  ;
+    
+    
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+    
+    
+    .media_block{
+      max-width: 414px;
+      display: grid;
+      grid-template-columns: repeat(4,45px);
+    }
+    
+    .media_block--footer{
+    margin-top: 50px;
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column:2/4;
+    grid-template-columns: repeat(4,75px);
+    
+    
+    
+    }
+    
+    .media_block.stock{
+      display: grid;
+      grid-template-columns: repeat(4,35px);
+      height:20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    
+    
+    .submenu_button{
+    
+     width:30px;
+      cursor: pointer;
+      transition: 0.5s;
+    
+    }
+    
+    
+    
+    .submenu_button.footer img{
+    margin-left: 15px;
+    margin-right: 15px;
+    
+     }
+    .submenu_button:hover{
+    
+      opacity: 50%;
+      transition: 0.5s;
+     
+     }
+    
+    .submenu_button img{
+      width: 35px;
+    }
+    
+    .submenu_button.stock img{
+      width: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*/////////////////////////// SECTION //////////////////////////////////////////////////*/
+    
+    .section {
+      display: none;
+    }
+    
+    
+    
+    .section--active {
+      display: grid;
+      grid-column: 2/6;
+      animation-name: delayingActive;
+      animation-duration: 2s;
+      margin-bottom: 50px;
+      margin-left: 25px;
+      margin-right: 25px;
+      grid-gap: 25px 25px;
+    }
+    
+    .content-kunteynir {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 25px 25px;
+      grid-template-rows: auto 90px;
+    }
+    
+    .content-kunteynir-big {
+      margin: auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 15px 25px;
+    }
+    
+    .content-kunteynir-small {
+      display: grid;
+      grid-template-rows: 32px 50px auto;
+      grid-gap: 10px 10px;
+    }
+    
+    .italic {
+      font-style: italic;
+    }
+    
+    .subsection {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px 20px;
+    }
+    
+      /*/////////////////////// SEARCH BUTTON HEADER ///////////////////////////*/
+  
+      .animate-charcter{
+        border: none;
+        width: 290px;
+        text-align: left;
+        text-indent: 35px;
+        height: 40px;
+        cursor: pointer;
+    
+      background: linear-gradient(to right, #2f2f2f 20%, #FF0 40%, #FF0 60%, #2f2f2f 80%);
+      background-size: 200% auto;
+      color: #000;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      animation: shine 2s linear infinite;}
+    
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+    
+      .banner-find-h {
+        margin-top: 20em;
+      -webkit-appearance: none;
+      text-align: left;
+      text-indent: 35px;
+      height: 40px;
+      cursor: pointer;
+      background: #fff url(../../../dist/data/icon-search.svg) 10px / 15px no-repeat;
+      border: .1px solid #a4a8a8;
+      border-radius: 25px;
+      overflow: hidden;
+      }
+    
+      @media screen and (min-device-width: 700px) and (max-device-width: 1024px) and (orientation:portrait) {
+        .banner-find-h{
+          margin-top: 10em;
+    
+        }
+      }
+    
+    
+        /*/////////////////////// text drop ///////////////////////////*/
+    
+        @keyframes drop {
+          0% {transform: translateY(200px) scaleY(0.9); opacity: 0;}
+          5% {opacity: .5;}
+          60%{transform: translateY(0px) scaleY(1); opacity: .8;}
+          100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+        }
+    
+        .textdrop{
+          animation:drop .8s linear forwards
+        }
