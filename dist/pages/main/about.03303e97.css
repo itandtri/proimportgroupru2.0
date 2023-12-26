@@ -1,0 +1,307 @@
+@media only screen and (width >= 750px) {
+  .header__phonecall, #menu, #navcheck {
+    display: none;
+  }
+
+  .visuallyhidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (width <= 700px) {
+  .menu--active {
+    color: #1937b9;
+  }
+
+  .main-nav {
+    transform: none;
+  }
+
+  .stripe-nav {
+    z-index: 4;
+    color: #2f2f2f;
+    background-color: #949494;
+    width: 200px;
+    height: .5px;
+    margin: .2em 3em;
+  }
+
+  .nav--phone {
+    padding-left: 2.6em;
+  }
+
+  .header__phonecall {
+    z-index: 3;
+    cursor: pointer;
+    width: 2em;
+    position: fixed;
+    top: .75em;
+    left: 1.5em;
+  }
+
+  .header__photo {
+    z-index: 10000;
+    box-sizing: border-box;
+    cursor: pointer;
+    grid-area: 1 / 2 / 1 / 4;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+    padding-right: 10px;
+    transition: all 1s;
+  }
+
+  .media_block {
+    display: none;
+  }
+
+  .media_block--nav {
+    padding-top: 2em;
+    padding-left: 2em;
+  }
+
+  .submenu_button--nav {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .5s;
+  }
+
+  .submenu_button--nav img {
+    width: 30px;
+  }
+
+  input {
+    opacity: 0;
+    position: fixed;
+  }
+
+  label {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+
+  label:before {
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    background-color: #000000bf;
+    height: 80em;
+    transition: opacity .5s cubic-bezier(.19, 1, .22, 1);
+    position: fixed;
+    inset: 58px 0 0;
+  }
+
+  label .burger {
+    z-index: 3;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0;
+    padding: 0;
+    transition: opacity .5s cubic-bezier(.19, 1, .22, 1);
+    position: fixed;
+    top: 1em;
+    right: 1.5em;
+  }
+
+  label .burger:before, label .burger .bar, label .burger:after {
+    content: "";
+    background: #2f2f2f;
+    width: 100%;
+    height: 12%;
+    transition: all .5s cubic-bezier(.19, 1, .22, 1);
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+
+  label .burger .bar {
+    top: 44%;
+  }
+
+  label .burger:before {
+    transform-origin: 0 0;
+    top: 0;
+  }
+
+  label .burger:after {
+    transform-origin: 0 100%;
+    bottom: 0;
+  }
+
+  input:focus + label .burger, label:hover .burger {
+    opacity: .75;
+  }
+
+  nav {
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    will-change: transform;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3em;
+    transition: transform .5s cubic-bezier(.19, 1, .22, 1);
+    display: flex;
+    position: fixed;
+    inset: 57px 0 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  nav:before {
+    z-index: 0;
+    content: "";
+    transform-origin: 0 100%;
+    will-change: transform;
+    background: #fff;
+    width: 25em;
+    transition: transform .5s cubic-bezier(.19, 1, .22, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: skewX(15deg)translateX(-100%);
+  }
+}
+
+@media only screen and (width <= 700px) and (width >= 40em) {
+  nav:before {
+    width: 40em;
+  }
+}
+
+@media only screen and (width <= 700px) {
+  nav a {
+    color: #2f2f2f;
+    margin: .3em 0;
+    padding: .2em 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .15s cubic-bezier(.19, 1, .22, 1), transform .5s cubic-bezier(.19, 1, .22, 1);
+    transform: translateX(-100%);
+  }
+
+  nav a:first-child {
+    transition-delay: 0s, .1s;
+  }
+
+  nav a:nth-child(2) {
+    transition-delay: 0s, .15s;
+  }
+
+  nav a:nth-child(3) {
+    transition-delay: 0s, .2s;
+  }
+
+  nav a:nth-child(4) {
+    transition-delay: 0s, .25s;
+  }
+
+  nav a:nth-child(5) {
+    transition-delay: 0s, .3s;
+  }
+
+  nav a:nth-child(6) {
+    transition-delay: 0s, .35s;
+  }
+
+  nav a:hover, nav a:focus {
+    color: #000;
+  }
+
+  nav .media_block--nav {
+    color: #2f2f2f;
+    margin: .3em 0;
+    padding: .1em .3em;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .15s cubic-bezier(.19, 1, .22, 1), transform .5s cubic-bezier(.19, 1, .22, 1);
+    transform: translateX(-100%);
+  }
+
+  nav .adress--nav {
+    color: #2f2f2f;
+    margin: .5em 0;
+    padding: .2em 3.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .15s cubic-bezier(.19, 1, .22, 1), transform .5s cubic-bezier(.19, 1, .22, 1);
+    transform: translateX(-100%);
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  main .content {
+    will-change: transform, filter;
+    transition: all .5s cubic-bezier(.19, 1, .22, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  [id="navcheck"]:checked + label:before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  [id="navcheck"]:checked + label .burger:before, [id="navcheck"]:checked + label .burger:after {
+    width: 141.42%;
+  }
+
+  [id="navcheck"]:checked + label .burger:before {
+    transform: rotate(45deg)translateY(-50%);
+  }
+
+  [id="navcheck"]:checked + label .burger:after {
+    transform: rotate(-45deg)translateY(50%);
+  }
+
+  [id="navcheck"]:checked + label .burger .bar {
+    transform: scale(.1);
+  }
+
+  [id="navcheck"]:checked ~ nav {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  [id="navcheck"]:checked ~ nav:before {
+    visibility: visible;
+    opacity: 1;
+    transform: skewX(15deg)translateX(0);
+  }
+
+  [id="navcheck"]:checked ~ nav a, [id="navcheck"]:checked ~ nav .media_block--nav, [id="navcheck"]:checked ~ nav .adress--nav {
+    transform: translateX(0);
+  }
+
+  .visuallyhidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=index.03303e97.css.map */
