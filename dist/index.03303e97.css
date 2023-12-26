@@ -1,4 +1,4 @@
-@media only screen and (width >= 480px) {
+@media only screen and (width >= 750px) {
   .header__phonecall, #menu, #navcheck {
     display: none;
   }
@@ -15,7 +15,7 @@
   }
 }
 
-@media only screen and (width <= 480px) {
+@media only screen and (width <= 700px) {
   .menu--active {
     color: #1937b9;
   }
@@ -178,13 +178,13 @@
   }
 }
 
-@media only screen and (width <= 480px) and (width >= 40em) {
+@media only screen and (width <= 700px) and (width >= 40em) {
   nav:before {
     width: 40em;
   }
 }
 
-@media only screen and (width <= 480px) {
+@media only screen and (width <= 700px) {
   nav a {
     color: #2f2f2f;
     margin: .3em 0;
