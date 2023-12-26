@@ -667,6 +667,6 @@ function init() {
 }
 ymaps.ready(init);
 
-},{}]},["23KxC","7OZk7"], "7OZk7", "parcelRequiref68e")
+},{}]},["23KxC","7OZk7"], "7OZk7", "parcelRequireafba")
 
 //# sourceMappingURL=contacts.8c89024a.js.map

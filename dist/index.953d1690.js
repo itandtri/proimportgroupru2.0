@@ -852,6 +852,6 @@ function lazyStockSlider() {
     });
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2uzF8","dMeSN"], "dMeSN", "parcelRequiref68e")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["2uzF8","dMeSN"], "dMeSN", "parcelRequireafba")
 
 //# sourceMappingURL=index.953d1690.js.map

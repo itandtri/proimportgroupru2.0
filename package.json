@@ -1,6 +1,6 @@
 {
-  "name": "proimport.kz",
-  "version": "1.0.0",
+  "name": "proimportgroup.ru",
+  "version": "2.0.0",
   "devDependencies": {
     "@parcel/transformer-less": "^2.10.3",
     "@parcel/transformer-posthtml": "^2.10.3",
@@ -14,9 +14,11 @@
   },
   "author": "SB",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "2gis-maps": "^3.7.1",
+    "babel": "^6.23.0",
     "lazyload-js": "^1.0.0"
-  }
+  },
+  "main": "index.js",
+  "description": ""
 }

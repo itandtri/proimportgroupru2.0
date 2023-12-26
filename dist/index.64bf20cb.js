@@ -927,6 +927,6 @@ function addPrice(objectname) {
     });
 }
 
-},{"../carcatalog/variables":"aC3lV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["kmmdD","5EGs8"], "5EGs8", "parcelRequiref68e")
+},{"../carcatalog/variables":"aC3lV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["kmmdD","5EGs8"], "5EGs8", "parcelRequireafba")
 
 //# sourceMappingURL=index.64bf20cb.js.map

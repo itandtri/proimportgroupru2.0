@@ -716,6 +716,6 @@ function lazyLoad(target) {
 let imgTargets = document.querySelectorAll("img[data-src]");
 imgTargets.forEach(lazyLoad);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["e99ba","iAiIJ"], "iAiIJ", "parcelRequiref68e")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["e99ba","iAiIJ"], "iAiIJ", "parcelRequireafba")
 
 //# sourceMappingURL=index.5ab96854.js.map
