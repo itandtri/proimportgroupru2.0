@@ -9,8 +9,8 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel index.html --dist-dir ./dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "react-scripts build",
+        "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SB",
   "license": "ISC",
