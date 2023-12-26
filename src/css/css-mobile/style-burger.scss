@@ -177,7 +177,7 @@
       justify-content: center;
       align-items: flex-start;
       transform: translate3d(0,0,0); /* material acceleration */
-      transform: translateX(100%);
+     /* transform: translateX(100%);*/
       will-change: transform;
       transition: transform .5s $timing-function;
       &::before {

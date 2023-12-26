@@ -17,7 +17,9 @@
   "dependencies": {
     "2gis-maps": "^3.7.1",
     "babel": "^6.23.0",
-    "lazyload-js": "^1.0.0"
+    "lazyload-js": "^1.0.0",
+    "less": "^4.2.0",
+    "sass": "^1.69.5"
   },
   "description": ""
 }
