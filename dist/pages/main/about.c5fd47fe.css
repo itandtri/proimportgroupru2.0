@@ -2,7 +2,7 @@
   background-blend-mode: multiply;
   text-align: center;
   background-color: #00000080;
-  background-image: url("indexphoto2.c36e131e.png");
+  background-image: url("../../indexphoto2.c36e131e.png");
   background-size: 100%;
   grid-column: 1 / 7;
   grid-template-columns: repeat(6, 1fr);
@@ -23,6 +23,10 @@
   margin-left: 30px;
   margin-right: 30px;
   display: grid;
+}
+
+.section {
+  display: none;
 }
 
 .section--active {
@@ -60,6 +64,12 @@
   font-style: italic;
 }
 
+.subsection {
+  grid-gap: 20px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
 @keyframes shine {
   to {
     background-position: 200%;
@@ -93,38 +103,34 @@
   }
 }
 
-.main {
-  background-image: url("indexphoto.da288793.png");
-}
-
 .main.about {
   background-blend-mode: multiply;
   background-color: #00000080;
-  background-image: url("pcc.2cac7516.jpg");
+  background-image: url("../../pcc.2cac7516.jpg");
 }
 
 .main.business {
   background-blend-mode: multiply;
   background-color: #00000080;
-  background-image: url("indexbusiness2.0646d579.jpeg");
+  background-image: url("../../indexbusiness2.0646d579.jpeg");
 }
 
 .main.contacts {
   background-blend-mode: multiply;
   background-color: #00000080;
-  background-image: url("maincontacts.2ffd04d3.png");
+  background-image: url("../../maincontacts.2ffd04d3.png");
 }
 
 .main.status {
   background-blend-mode: multiply;
   background-color: #00000080;
-  background-image: url("status.59398609.jpg");
+  background-image: url("../../status.59398609.jpg");
 }
 
 .main.shipping {
   background-blend-mode: multiply;
   background-color: #00000080;
-  background-image: url("shipping2.0ea623d9.jpg");
+  background-image: url("../../shipping2.0ea623d9.jpg");
 }
 
 .main {
@@ -226,29 +232,6 @@
   width: 20px;
 }
 
-.section {
-  display: none;
-}
-
-.section--active {
-  grid-gap: 25px 25px;
-  grid-column: 1 / 2;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  margin-bottom: 50px;
-  margin-left: .5em;
-  margin-right: .5em;
-  animation-name: delayingActive;
-  animation-duration: 2s;
-  display: grid;
-}
-
-.subsection {
-  grid-gap: 20px 0;
-  grid-template-columns: 1fr;
-  display: grid;
-}
-
 .animate-charcter {
   text-align: left;
   text-indent: 35px;
@@ -270,7 +253,7 @@
   text-align: left;
   text-indent: 35px;
   cursor: pointer;
-  background: #fff url("icon-search.f1663c42.svg") 10px / 15px no-repeat;
+  background: #fff url("../../icon-search.f1663c42.svg") 10px / 15px no-repeat;
   border: .1px solid #a4a8a8;
   border-radius: 25px;
   height: 40px;
@@ -288,4 +271,4 @@
   animation: .8s linear forwards drop;
 }
 
-/*# sourceMappingURL=index.c5fd47fe.css.map */
+/*# sourceMappingURL=about.c5fd47fe.css.map */
